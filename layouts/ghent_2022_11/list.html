@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="row" style="margin-top: 5%">
+    <div class="masonry">
+        {{ range $.Site.Data.ghent_2022_11 }}
+            <div class="item">
+                <img src="{{ .src }}?nf_resize=fit&w=300">
+            </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
